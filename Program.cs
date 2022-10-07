@@ -11,26 +11,32 @@ class Program{
 
             getDeck deckOfCards = new getDeck();
 
-            pull card from deck with index
+            // pull_random_card = card new pull_random_card();
             Console.Write($"The card is {}");
 
-            Console.Write("Higher or Lower");
-            string user_guess = Console.ReadLine();
+            Console.Write("Higher or Lower (h/l): ");
+            string? user_guess = Console.ReadLine();
 
-            pull card from deck
+            pull_random_card()
             Console.Write($"Next card was: {}");
 
-            need to calculate score
+            calculate_score()
             Console.Write($"You score is: {}");
 
             Console.Write("[y/n]");
+            string? keep_going_user = Console.ReadLine();
         }
     }     
-    static pull_random_card{
-        
+    public int pull_random_card(List<Int>){
+        Random rnd = new Random();  
+        int randIndex = Random.Next(*deck_list*.Count);
+        int random = numbers[randIndex];
+        return random_number;
     }   
 
-    static calculate_score{
+    public int calculate_score(int current_score, string user_guess){
+        pull_random_card(decklist);
+        if 
 
     }
 }
