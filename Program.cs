@@ -35,8 +35,30 @@ class Program{
     }   
 
     public int calculate_score(int current_score, string user_guess){
+        Score 
         pull_random_card(decklist);
-        if 
+        if (new_card == old_card){
+           return Score
+        }   
+
+        else if (user_guess == "h"){
+            if(new_card) > old_card){
+                return Score += 100;
+                }
+                else{
+                    return Score -= 75;
+            }}
+        }
+
+        else{
+            if(new_card < old_card){
+                return True;
+                else{
+                    return Score -= 75;
+                }
+            }
+        }
+
 
     }
 }
