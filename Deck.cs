@@ -8,7 +8,7 @@ class Deck {
         return Cards;
     }
     Random generator = new Random();
-public int pull_random_card(List<int> Cards){ 
+    public int pull_random_card(List<int> Cards){ 
         int randIndex = generator.Next(Cards.Count);
         int card_used = Cards[randIndex];
         Cards.RemoveAt(randIndex);
