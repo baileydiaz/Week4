@@ -1,14 +1,12 @@
 class Deck {
-
-    List<int> GetNumbers(int start, int end)
-    {
-        List<int> Cards = new List<int>();
-        for (int i = start; i < end; i++)
+    List<int>Cards = new List<int>();
+    public Deck(){
+        for (int i = 1; i < 14; i++)
             Cards.Add(i);
-        return Cards;
     }
+
     Random generator = new Random();
-    public int pull_random_card(List<int> Cards){ 
+    public int pull_random_card(){ 
         int randIndex = generator.Next(Cards.Count);
         int card_used = Cards[randIndex];
         Cards.RemoveAt(randIndex);
