@@ -9,7 +9,7 @@ class Program{
         while ((score > 0) && (x == "yes")){
 
             Deck deckOfCards = new Deck();
-
+            newCard = deckOfCards.pull_random_card();
             // pull_random_card = card new pull_random_card();
             Console.Write($"The card is {}");
 
@@ -26,18 +26,12 @@ class Program{
             string? keep_going_user = Console.ReadLine();
         }
     }     
-    public int pull_random_card(List<Int>){
-        Random rnd = new Random();  
-        int randIndex = Random.Next(*deck_list*.Count);
-        int random = numbers[randIndex];
-        return random_number;
-    }   
+    
 
-    public int calculate_score(int current_score, string user_guess, int old_card){
-        user the current score
-        pull_random_card(decklist);
+    public int calculate_score(int current_score, string user_guess, int old_card, List<int> Cards){
+        new_card = Cards.DrawRandomCard();
         if (new_card == old_card){
-           return Score
+           return current_score;
         }   
 
         else if (user_guess == "h"){
@@ -45,7 +39,7 @@ class Program{
                 return Score += 100;
                 }
                 else{
-                    return Score -= 75;
+                    return current_score -= 75;
             }}
         }
 
@@ -53,7 +47,7 @@ class Program{
             if(new_card < old_card){
                 return current_score += 100;
                 else{
-                    return Score -= 75;
+                return current_score -= 75;
                 }
             }
         }
