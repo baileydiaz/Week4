@@ -5,11 +5,10 @@ class Program{
     static void Main(string[] args){
         string x = "yes";
         int score = 1;
+        Score running_score = new Score();
         while ((score > 0) && (x == "yes")){
 
-            Score running_score = new Score();
-
-            getDeck deckOfCards = new getDeck();
+            Deck deckOfCards = new Deck();
 
             // pull_random_card = card new pull_random_card();
             Console.Write($"The card is {}");
@@ -34,15 +33,15 @@ class Program{
         return random_number;
     }   
 
-    public int calculate_score(int current_score, string user_guess){
-        Score 
+    public int calculate_score(int current_score, string user_guess, int old_card){
+        user the current score
         pull_random_card(decklist);
         if (new_card == old_card){
            return Score
         }   
 
         else if (user_guess == "h"){
-            if(new_card) > old_card){
+            if(new_card > old_card){
                 return Score += 100;
                 }
                 else{
@@ -52,7 +51,7 @@ class Program{
 
         else{
             if(new_card < old_card){
-                return True;
+                return current_score += 100;
                 else{
                     return Score -= 75;
                 }
