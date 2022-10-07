@@ -28,10 +28,10 @@ class Program{
     }     
     
 
-    public int calculate_score(int current_score, string user_guess, int old_card){
-        new_card = deck.DrawRandomCard();
+    public int calculate_score(int current_score, string user_guess, int old_card, List<int> Cards){
+        new_card = Cards.DrawRandomCard();
         if (new_card == old_card){
-           return current_score
+           return current_score;
         }   
 
         else if (user_guess == "h"){
@@ -39,7 +39,7 @@ class Program{
                 return Score += 100;
                 }
                 else{
-                    return curren_score -= 75;
+                    return current_score -= 75;
             }}
         }
 
