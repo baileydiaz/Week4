@@ -12,18 +12,18 @@ class Score
 
         else if (user_guess == "h"){
             if(new_card > old_card){
-                return score += 100;
+                return (score += 100);
                 }
                 else{
-                    return score -= 75;
+                    return (score -= 75);
             }}
         
 
         else{
             if(new_card < old_card){
-                return score += 100;}
+                return (score += 100);}
                 else{
-                    return score -= 75;
+                    return (score -= 75);
                 }
             }
         }
